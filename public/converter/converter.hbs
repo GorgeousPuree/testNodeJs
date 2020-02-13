@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First task</title>
+</head>
+<body>
+<header>
+    <h1>Length converter</h1>
+</header>
+<a href="/">Home</a>
+<form name="converterForm">
+    <label>
+        <input type="number" name="inputValue">
+        <label>
+            <select name="inputMeasure">
+                {{#each units}}
+                    <option value="{{unit}}">{{unit}}</option>
+                {{/each}}
+            </select>
+        </label>
+    </label><br/>
+    <label>
+        <input type="number" name="outputValue" disabled>
+        <label>
+            <select name="outputMeasure">
+                {{#each units}}
+                    <option value="{{unit}}">{{unit}}</option>
+                {{/each}}
+            </select>
+        </label>
+    </label><br/>
+    <input type="submit" value="Convert" id="submitConvert">
+</form>
+<br/>
+
+<form action="/uploadUnits" method="post" enctype="multipart/form-data">
+    <label>File</label><br>
+    <input type="file" name="filedata"/><br>
+    <input type="submit" value="Send"/>
+</form>
+
+</body>
+<script src="converter.js"></script>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd51d2a7-5816-4e33-9b8b-9e656288c8d7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xi6OzZpfSSmISJctjujrc7McST" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.4.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/potpack-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasya\WebstormProjects\testApp\public" />
+      <recent name="C:\Users\Vasya\WebstormProjects\testApp\utils\rectangleSorter" />
+      <recent name="C:\Users\Vasya\WebstormProjects\testApp\utils\converter" />
+      <recent name="C:\Users\Vasya\WebstormProjects\testApp\public\rectangles" />
+      <recent name="C:\Users\Vasya\WebstormProjects\testApp\public\converter" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd51d2a7-5816-4e33-9b8b-9e656288c8d7" name="Default Changelist" comment="" />
+      <created>1581516539950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581516539950</updated>
+      <workItem from="1581516541123" duration="1328000" />
+      <workItem from="1581517931032" duration="7356000" />
+      <workItem from="1581528454300" duration="2121000" />
+      <workItem from="1581592613827" duration="32209000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="559" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581621033753">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="559" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1581621033753" />
+    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581624684053">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581624684053" />
+    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1581625556359">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1581625556359" />
+  </component>
+</project>
