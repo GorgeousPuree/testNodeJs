@@ -1,7 +1,7 @@
-// during solving the task, Richard E. Korf's article has been studied
+// during solving the task, Richard E. Korf's article has been read
 // https://pdfs.semanticscholar.org/1120/310a8334043e0ff03d065ca9700f36746f18.pdf
 
-// still this solution might seem not very optimal with small number of rectangles
+// solution might seem not very optimal with small number of rectangles and it works better with near-square shaped rectangles
 
 module.exports.sortRectangles = function(rectangles) {
     let area = 0; // summary area
@@ -20,8 +20,10 @@ module.exports.sortRectangles = function(rectangles) {
         maxWidth = Math.max(maxWidth, rectangle.size.width);
     }
 
-    // sort the rectangles for insertion by height, descending
-    rectangles.sort((a, b) => b.size.height - a.size.height);
+    // sort the rectangles for insertion by height, descending.
+    // if heights of rectangles are equal, then sort by areas
+    rectangles.sort((a, b) => (b.size.height === a.size.height) ?  b.size.height * b.size.width - a.size.height * a.size.width :
+        b.size.height - a.size.height);
 
     // aim for a squarish resulting container,
     // slightly adjusted for sub-100% space utilization
@@ -43,7 +45,7 @@ module.exports.sortRectangles = function(rectangles) {
 
             // found the space; add the rectangle to its top-left corner
             // |-------|-------|
-            // |  rectangle  |       |
+            // |  rect |       |
             // |_______|       |
             // |         space |
             // |_______________|
@@ -61,7 +63,7 @@ module.exports.sortRectangles = function(rectangles) {
             } else if (rectangle.size.height === space.h) {
                 // space matches the rectangle height; update it accordingly
                 // |-------|---------------|
-                // |  rectangle  | updated space |
+                // |rect   | updated space |
                 // |_______|_______________|
                 space.x += rectangle.size.width;
                 space.w -= rectangle.size.width;
@@ -69,7 +71,7 @@ module.exports.sortRectangles = function(rectangles) {
             } else if (rectangle.size.width === space.w) {
                 // space matches the rectangle width; update it accordingly
                 // |---------------|
-                // |      rectangle      |
+                // |rect           |
                 // |_______________|
                 // | updated space |
                 // |_______________|
@@ -79,7 +81,7 @@ module.exports.sortRectangles = function(rectangles) {
             } else {
                 // otherwise the rectangle splits the space into two spaces
                 // |-------|-----------|
-                // |  rectangle  | new space |
+                // |  rect | new space |
                 // |_______|___________|
                 // | updated space     |
                 // |___________________|

@@ -1,7 +1,7 @@
 let units = [
     {unit: "cm", toCm: 1},
     {unit: "m", toCm: 100},
-    {unit: "in", toCm: 2.52},
+    {unit: "in", toCm: 2.54},
     {unit: "ft", toCm: 30.48},
 ];
 
@@ -10,7 +10,7 @@ module.exports.units = units;
 module.exports.convertUnits = function convertMeasure(requestedMeasures) {
     let from = units.find(element => element.unit === requestedMeasures.distance.unit).toCm;
     let to = units.find(element => element.unit === requestedMeasures.convert_to).toCm;
-    return requestedMeasures.distance.value * from / to;
+    return (requestedMeasures.distance.value * from / to).toFixed(2);
 };
 
 module.exports.addUnit = function addUnit(dataUnits) {
