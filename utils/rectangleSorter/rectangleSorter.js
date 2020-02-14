@@ -1,4 +1,4 @@
-// during solving the task, Richard E. Korf's article has been read
+// during the solution of the task, an article by Richard E. Korf was read
 // https://pdfs.semanticscholar.org/1120/310a8334043e0ff03d065ca9700f36746f18.pdf
 
 // solution might seem not very optimal with small number of rectangles and it works better with near-square shaped rectangles
