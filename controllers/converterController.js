@@ -9,7 +9,7 @@ exports.converter = function (request, response) {
 };
 
 exports.convert = function (request, response) {
-    if(!request.body) {console.log("hi"); return response.sendStatus(400); }
+    if(!request.body) return response.sendStatus(400);
     let requestedMeasures = request.body;
     let outputValue = converter.convertUnits(requestedMeasures);
 
