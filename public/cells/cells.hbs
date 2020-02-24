@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cells algorithm</title>
+</head>
+<body>
+<header>
+    <a href="/">Home</a>
+</header>
+<form action="/uploadCells" method="post" enctype="multipart/form-data">
+    <label>Upload cells and corrections JSON file</label><br>
+    <input type="file" name="filedata"/><br>
+    <input type="submit" value="Send" id="submitCells"/>
+</form>
+<div>
+    <div>
+        <h3>Input: </h3>
+        <p>Corrections - {{corrections}}</p>
+        <p>Cells - {{cells}}</p>
+    </div>
+    <div>
+        <h3>Output: </h3>
+        <p>Main thruster - {{main_thruster}}</p>
+        <p>Secondary thruster - {{secondary_thruster}}</p>
+        <p>Delta velocity - {{delta_velocity}}</p>
+    </div>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@ const multer  = require("multer");
 const homeController = require("./controllers/homeController");
 const converterController = require("./controllers/converterController");
 const rectangleController = require("./controllers/rectangleController");
-const capsulesController = require("./controllers/capsulesController");
+const cellsController = require("./controllers/cellsController");
 
 const app = express();
 app.use(express.static(__dirname + '/public'));
@@ -20,7 +20,8 @@ app.post("/sortRectangles", jsonParser, rectangleController.sortRectangles);
 const upload = multer({dest:"uploads"});
 app.post("/uploadUnits", upload.single("filedata"), converterController.uploadUnits);
 
-app.get("/capsules", capsulesController.capsules);
+app.get("/cells", cellsController.cells);
+app.post("/uploadCells", upload.single("filedata"), cellsController.uploadCells);
 
 app.get("/home", homeController.home);
 app.get("/", homeController.home);
