@@ -25,4 +25,13 @@ If you would like to set new units in converter (first link) you have to upload 
 ]
 `
 
-##### Rectangle sorting algorithm is descibed in "/testApp/utils/rectangleSorter/rectangleSorter.js"
+##### Rectangle sorting algorithm is described in "/testApp/utils/rectangleSorter/rectangleSorter.js"
+
+##### Cells algorithm is described in "testApp/utils/cells/population.js"
+
+- Cells and corrections JSON-file example:
+` {
+    "corrections": [1, 12, 7, 1],
+    "cells": [8, 4, 6, 2, 2]
+  }
+`
